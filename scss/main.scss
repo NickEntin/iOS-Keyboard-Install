@@ -26,10 +26,18 @@ a.button:hover {
 	color: $text_color;
 }
 
-@media screen {
-	@import "landscape";
+@media screen and (orientation: portrait) {
+	@import "portrait";
+
+	body {
+		background: red;
+	}
 }
 
-@media screen {
-	@import "portrait";
+@media screen and (orientation: landscape) {
+	@import "landscape";
+
+	body {
+		background: blue;
+	}
 }
