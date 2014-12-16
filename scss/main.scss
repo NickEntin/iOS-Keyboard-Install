@@ -28,16 +28,8 @@ a.button:hover {
 
 @media screen and (orientation: portrait) {
 	@import "portrait";
-
-	body {
-		background: red;
-	}
 }
 
 @media screen and (orientation: landscape) {
 	@import "landscape";
-
-	body {
-		background: blue;
-	}
 }
