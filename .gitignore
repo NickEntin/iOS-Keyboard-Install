@@ -1,2 +1,5 @@
 # Compiled Styles
 css/
+
+# Cache
+.sass-cache
