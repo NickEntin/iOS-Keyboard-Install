@@ -1,5 +1,8 @@
 # Compiled Styles
 css/
 
+# Minified Scripts
+js/min/
+
 # Cache
 .sass-cache
