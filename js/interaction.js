@@ -10,21 +10,27 @@ function goToNextStep(option) {
 }
 
 function updateDisplay() {
-	// $("#text").fadeOut(200);
+	// fade text out for 300 ms, then fade back in (after changed) for 300 ms
+	$("#text").fadeOut(300).fadeIn(300);
 
-	$("#instruction").html("<p>"+path.text+"</p>");
+	// wait until text is not visible, then update
+	$({}).delay(300).queue(function() {
+		console.log("Executing delayed function");
 
-	$("#buttons").html("");
-	for (var button in path.buttons) {
-		var btn = $("<a href=\"#\" class=\"button\" >"+button+"</a>");
-		btn.click(function() {
-			goToNextStep($(this).html());
-			updateDisplay();
-		});
-		$("#buttons").append(btn);
-	}
+		$("#instruction").html("<p>"+path.text+"</p>");
 
-	// $("#text").fadeIn(200);
+		$("#buttons").html("");
+		for (var button in path.buttons) {
+			var btn = $("<a href=\"#\" class=\"button\" >"+button+"</a>");
+			btn.click(function() {
+				goToNextStep($(this).html());
+				updateDisplay();
+			});
+			$("#buttons").append(btn);
+		}
+
+		$(this).dequeue();
+	});
 }
 
 $(document).ready(function() {
