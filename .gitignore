@@ -1,6 +1,2 @@
-# Config Files
-config.codekit
-
-# Raw Files
-scss/
-js/
+# SASS Cache
+.sass-cache
