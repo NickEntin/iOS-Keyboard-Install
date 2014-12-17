@@ -1,11 +1,33 @@
 // start at the beginning
 var path = full_path;
 
+function goToFinalScreen() {
+	path = {
+		text: "This tutorial was brought to you by <a href=\"http://nickentin.com\">Nick Entin</a>.",
+		image: "",
+		buttons: {}
+	};
+	updateDisplay();
+
+	var btn_restart = $("<a href=\"#\" class=\"button\">Start Over</a>").click(function() {
+		path = full_path;
+		updateDisplay();
+	});
+	$("#buttons").delay(300).queue(function() {
+		$(this).append(btn_restart);
+	});
+}
+
 function goToNextStep(option) {
+	path = path.buttons[option];
+
+	// if this is the end, show the final screen in 2.5 seconds
 	if (path.endpoint) {
-		// TODO: go to done screen
-	} else {
-		path = path.buttons[option];
+		console.log("Starting queue");
+		$({}).delay(2500).queue(function() {
+			console.log("Executing queue");
+			goToFinalScreen();
+		});
 	}
 }
 
@@ -15,13 +37,11 @@ function updateDisplay() {
 
 	// wait until text is not visible, then update
 	$({}).delay(300).queue(function() {
-		console.log("Executing delayed function");
-
 		$("#instruction").html("<p>"+path.text+"</p>");
 
 		$("#buttons").html("");
 		for (var button in path.buttons) {
-			var btn = $("<a href=\"#\" class=\"button\" >"+button+"</a>");
+			var btn = $("<a href=\"#\" class=\"button\">"+button+"</a>");
 			btn.click(function() {
 				goToNextStep($(this).html());
 				updateDisplay();
