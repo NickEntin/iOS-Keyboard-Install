@@ -1,21 +1,40 @@
+@import "variables";
+
 * {
 	font-family: sans-serif;
 }
 
+body {
+	background: $background_color;
+}
+
 div#text {
 	text-align: center;
-	color: #222222;
+	color: $text_color;
+	font-size: 1.2rem;
+
+	span#instruction {
+		display: block;
+	}
+
+	a.button {
+		display: inline-block;
+		margin: 1.5rem;
+
+		font-weight: bold;
+		text-decoration: none;
+		color: $link_color;
+	}
+
+	a.button:hover {
+		color: $text_color;
+	}
 }
 
-a.button {
-	position: block;
-	margin: 1rem;
-
-	font-weight: bold;
-	text-decoration: none;
-	color: #666666;
+@media screen and (orientation: portrait) {
+	@import "portrait";
 }
 
-a.button:hover {
-	color: #222222;
+@media screen and (orientation: landscape) {
+	@import "landscape";
 }
