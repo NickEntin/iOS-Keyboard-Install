@@ -2,7 +2,7 @@
 css/
 
 # Minified Scripts
-js/min/
+js-min/
 
 # Cache
 .sass-cache
