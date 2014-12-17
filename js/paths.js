@@ -47,10 +47,12 @@ var full_path = {
 																			text: "You should get a popup asking you to confirm. It's telling you that giving the keyboard full access gives it, well... full access. Click \"Allow\" to confirm.",
 																			image: "",
 																			endpoint: false,
-																			"Makes sense. Am I done?": {
-																				text: "Yep, that's it! You're now ready to go and enjoy your new keyboard. Have fun!",
-																				image: "",
-																				endpoint: true
+																			buttons: {
+																				"Makes sense. Am I done?": {
+																					text: "Yep, that's it! You're now ready to go and enjoy your new keyboard. Have fun!",
+																					image: "",
+																					endpoint: true
+																				}
 																			}
 																		}
 																	}
