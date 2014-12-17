@@ -340,7 +340,7 @@
 			"flagValue": -1
 			},
 		"devel": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"dojo": {
@@ -420,7 +420,7 @@
 			"flagValue": -1
 			},
 		"loopfunc": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"maxcomplexity": {
