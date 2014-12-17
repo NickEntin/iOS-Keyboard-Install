@@ -12,7 +12,7 @@ function goToNextStep(option) {
 function updateDisplay() {
 	// $("#text").fadeOut(200);
 
-	$("#instruction").html(path.text);
+	$("#instruction").html("<p>"+path.text+"</p>");
 
 	$("#buttons").html("");
 	for (var button in path.buttons) {
