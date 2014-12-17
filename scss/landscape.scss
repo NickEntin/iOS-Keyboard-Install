@@ -1,0 +1,16 @@
+$text_width: 35%;
+$preview_width: 50%;
+
+#text {
+	$text_height: 10rem;
+
+	position: absolute;
+	left: 51%;
+
+	// position slightly above vertical center
+	top: 50%;
+	margin-top: -7rem;
+
+	width: $text_width;
+	height: $text_height;
+}
