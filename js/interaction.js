@@ -1,10 +1,11 @@
 // start at the beginning
 var path = full_path;
+var device;
 
 function goToFinalScreen() {
 	path = {
 		text: "This tutorial was brought to you by <a href=\"http://nickentin.com\">Nick Entin</a>.",
-		image: "",
+		image: "01",
 		buttons: {}
 	};
 	updateDisplay();
@@ -29,11 +30,14 @@ function goToNextStep(option) {
 			goToFinalScreen();
 		});
 	}
+	preloadImagesForNextStep();
 }
 
 function updateDisplay() {
 	// fade text out for 300 ms, then fade back in (after changed) for 300 ms
 	$("#text").fadeOut(300).fadeIn(300);
+
+	$("#screen").css("background-image","url(img/"+device+"/"+path.image+".png)");
 
 	// wait until text is not visible, then update
 	$({}).delay(300).queue(function() {
@@ -59,19 +63,21 @@ function preloadImagesForNextStep() {
 	}
 }
 
-function preloadImage(url) {
-	(new Image()).src = url;
+function preloadImage(name) {
+	(new Image()).src = "img/"+device+"/"+name+".png";
 }
 
 $(document).ready(function() {
 	// set up initial button actions
 	$("#buttons a#iPhone").click(function() {
 		// set up preview image
+		device = "iPhone";
 
 		updateDisplay();
 	});
 	$("#buttons a#iPad").click(function() {
 		// set up preview image
+		device = "iPad";
 
 		updateDisplay();
 	});
