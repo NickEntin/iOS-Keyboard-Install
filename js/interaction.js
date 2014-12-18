@@ -34,13 +34,19 @@ function goToNextStep(option) {
 }
 
 function updateDisplay() {
-	// fade text out for 300 ms, then fade back in (after changed) for 300 ms
-	$("#text").fadeOut(300).fadeIn(300);
+	var TRANSITION_TIME = 400;
 
-	$("#screen").css("background-image","url(img/"+device+"/"+path.image+".png)");
+	// fade text out for 300 ms, then fade back in (after changed) for 300 ms
+	$("#text").fadeOut(TRANSITION_TIME/2).fadeIn(TRANSITION_TIME/2);
+
+	$("#nextscreen").fadeOut(0).css("background-image","url(img/"+device+"/"+path.image+".png)").fadeIn(TRANSITION_TIME);
+	$("#screen").delay(TRANSITION_TIME).queue(function() {
+		$(this).css("background-image","url(img/"+device+"/"+path.image+".png)");
+		$(this).dequeue();
+	}).fadeIn(0);
 
 	// wait until text is not visible, then update
-	$({}).delay(300).queue(function() {
+	$({}).delay(TRANSITION_TIME/2).queue(function() {
 		$("#instruction").html("<p>"+path.text+"</p>");
 
 		$("#buttons").html("");
@@ -68,6 +74,8 @@ function preloadImage(name) {
 }
 
 $(document).ready(function() {
+	$("#nextscreen").fadeOut(0);
+
 	// set up initial button actions
 	$("#buttons a#iPhone").click(function() {
 		// set up preview image
