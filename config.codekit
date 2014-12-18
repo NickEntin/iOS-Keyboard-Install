@@ -11,6 +11,105 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/iPhone\/01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 131669,
+		"inputAbbreviatedPath": "\/img\/iPhone\/01.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPhone\/02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95590,
+		"inputAbbreviatedPath": "\/img\/iPhone\/02.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPhone\/03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47431,
+		"inputAbbreviatedPath": "\/img\/iPhone\/03.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPhone\/04.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107168,
+		"inputAbbreviatedPath": "\/img\/iPhone\/04.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/04.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPhone\/05.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41503,
+		"inputAbbreviatedPath": "\/img\/iPhone\/05.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/05.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPhone\/06.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 97184,
+		"inputAbbreviatedPath": "\/img\/iPhone\/06.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/06.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPhone\/07.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69560,
+		"inputAbbreviatedPath": "\/img\/iPhone\/07.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/07.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPhone\/08.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37287,
+		"inputAbbreviatedPath": "\/img\/iPhone\/08.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/08.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPhone\/09.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92774,
+		"inputAbbreviatedPath": "\/img\/iPhone\/09.png",
+		"outputAbbreviatedPath": "\/img\/iPhone\/09.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -52,6 +151,22 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
+		},
+	"\/scss\/device.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/device.scss",
+		"outputAbbreviatedPath": "\/css\/device.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/scss\/landscape.scss": {
 		"createSourceMap": 0,
