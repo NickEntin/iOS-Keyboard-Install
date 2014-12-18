@@ -1,0 +1,61 @@
+#preview:not(.iPhone):not(.iPad) #screen {
+	border: 2px #ccc dashed;
+
+	position: absolute;
+	top:20px;
+	bottom:20px;
+
+	left: 50%;
+	width: 70%;
+	margin-left: -35%;
+}
+
+#preview.iPhone {
+	background-image: url(../img/iPhone.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+	#screen {
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		position: absolute;
+
+		// position the screen to be within the upper/lower bounds of the screen area on the device
+		top: 12%;
+		bottom: 12%;
+		
+		// the following three properties (background-position, width, left) ensure that the image is horizontally centered
+		background-position: center;
+		width: 100%;
+		left: 0%;
+
+		#nextscreen {
+			background-size: contain;
+			background-repeat: no-repeat;
+
+			position: absolute;
+
+			// position the screen to be within the upper/lower bounds of the screen area on the device
+			top: 0;
+			bottom: 0;
+			
+			// the following three properties (background-position, width, left) ensure that the image is horizontally centered
+			background-position: center;
+			width: 100%;
+			left: 0%;
+		}
+	}
+}
+
+#preview.iPad {
+	background-image: url(../img/iPad.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+	#screen {
+		
+	}
+}

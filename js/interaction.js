@@ -1,10 +1,12 @@
 // start at the beginning
 var path = full_path;
+var device;
+var TRANSITION_TIME = 500;
 
 function goToFinalScreen() {
 	path = {
 		text: "This tutorial was brought to you by <a href=\"http://nickentin.com\">Nick Entin</a>.",
-		image: "",
+		image: "01",
 		buttons: {}
 	};
 	updateDisplay();
@@ -29,14 +31,21 @@ function goToNextStep(option) {
 			goToFinalScreen();
 		});
 	}
+	preloadImagesForNextStep();
 }
 
 function updateDisplay() {
 	// fade text out for 300 ms, then fade back in (after changed) for 300 ms
-	$("#text").fadeOut(300).fadeIn(300);
+	$("#text").fadeOut(TRANSITION_TIME/2).fadeIn(TRANSITION_TIME/2);
+
+	$("#nextscreen").fadeOut(0).css("background-image","url(img/"+device+"/"+path.image+".png)").fadeIn(TRANSITION_TIME);
+	$("#screen").delay(TRANSITION_TIME).queue(function() {
+		$(this).css("background-image","url(img/"+device+"/"+path.image+".png)");
+		$(this).dequeue();
+	}).fadeIn(0);
 
 	// wait until text is not visible, then update
-	$({}).delay(300).queue(function() {
+	$({}).delay(TRANSITION_TIME/2).queue(function() {
 		$("#instruction").html("<p>"+path.text+"</p>");
 
 		$("#buttons").html("");
@@ -53,16 +62,34 @@ function updateDisplay() {
 	});
 }
 
+function preloadImagesForNextStep() {
+	for (var b in path.buttons) {
+		preloadImage("img/"+device+"/"+path.buttons[b].image+".png");
+	}
+}
+
+function preloadImage(url) {
+	(new Image()).src = url;
+}
+
 $(document).ready(function() {
 	// set up initial button actions
 	$("#buttons a#iPhone").click(function() {
 		// set up preview image
+		device = "iPhone";
+		$("#preview").fadeOut(0).addClass("iPhone").fadeIn(TRANSITION_TIME);
 
 		updateDisplay();
 	});
 	$("#buttons a#iPad").click(function() {
 		// set up preview image
+		device = "iPad";
+		$("#preview").fadeOut(0).addClass("iPad").fadeIn(TRANSITION_TIME);
 
 		updateDisplay();
 	});
+
+	// preload device images
+	preloadImage("img/iPhone.svg");
+	preloadImage("img/iPad.svg");
 });

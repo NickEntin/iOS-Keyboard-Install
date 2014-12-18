@@ -1,5 +1,10 @@
 $text_width: 35%;
-$preview_width: 50%;
+$preview_width: 40%;
+
+html,body {
+	margin: 0px;
+	height: 100%;
+}
 
 #text {
 	$text_height: 10rem;
@@ -13,4 +18,15 @@ $preview_width: 50%;
 
 	width: $text_width;
 	height: $text_height;
+}
+
+#preview {
+	$preview_height: 80%;
+
+	width: $preview_width;
+	height: $preview_height;
+
+	position: absolute;
+	right: 50%;
+	top: (100% - $preview_height)/2;
 }
