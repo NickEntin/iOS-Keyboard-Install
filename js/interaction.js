@@ -53,6 +53,16 @@ function updateDisplay() {
 	});
 }
 
+function preloadImagesForNextStep() {
+	for (var b in path.buttons) {
+		preloadImage(path.buttons[b].image);
+	}
+}
+
+function preloadImage(url) {
+	(new Image()).src = url;
+}
+
 $(document).ready(function() {
 	// set up initial button actions
 	$("#buttons a#iPhone").click(function() {

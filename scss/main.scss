@@ -1,4 +1,5 @@
 @import "variables";
+@import "device";
 
 * {
 	font-family: sans-serif;
@@ -37,4 +38,12 @@ div#text {
 
 @media screen and (orientation: landscape) {
 	@import "landscape";
+}
+
+// DEBUG DEVICE PREVIEW
+#preview {
+	background: url(../img/iPhone.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
