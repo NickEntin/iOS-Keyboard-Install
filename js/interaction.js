@@ -1,6 +1,7 @@
 // start at the beginning
 var path = full_path;
 var device;
+var TRANSITION_TIME = 500;
 
 function goToFinalScreen() {
 	path = {
@@ -34,8 +35,6 @@ function goToNextStep(option) {
 }
 
 function updateDisplay() {
-	var TRANSITION_TIME = 400;
-
 	// fade text out for 300 ms, then fade back in (after changed) for 300 ms
 	$("#text").fadeOut(TRANSITION_TIME/2).fadeIn(TRANSITION_TIME/2);
 
@@ -65,28 +64,32 @@ function updateDisplay() {
 
 function preloadImagesForNextStep() {
 	for (var b in path.buttons) {
-		preloadImage(path.buttons[b].image);
+		preloadImage("img/"+device+"/"+path.buttons[b].image+".png");
 	}
 }
 
-function preloadImage(name) {
-	(new Image()).src = "img/"+device+"/"+name+".png";
+function preloadImage(url) {
+	(new Image()).src = url;
 }
 
 $(document).ready(function() {
-	$("#nextscreen").fadeOut(0);
-
 	// set up initial button actions
 	$("#buttons a#iPhone").click(function() {
 		// set up preview image
 		device = "iPhone";
+		$("#preview").fadeOut(0).addClass("iPhone").fadeIn(TRANSITION_TIME);
 
 		updateDisplay();
 	});
 	$("#buttons a#iPad").click(function() {
 		// set up preview image
 		device = "iPad";
+		$("#preview").fadeOut(0).addClass("iPad").fadeIn(TRANSITION_TIME);
 
 		updateDisplay();
 	});
+
+	// preload device images
+	preloadImage("img/iPhone.svg");
+	preloadImage("img/iPad.svg");
 });
