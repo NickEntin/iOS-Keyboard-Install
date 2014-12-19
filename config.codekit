@@ -11,6 +11,94 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/iPad\/01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 220934,
+		"inputAbbreviatedPath": "\/img\/iPad\/01.png",
+		"outputAbbreviatedPath": "\/img\/iPad\/01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPad\/02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 154392,
+		"inputAbbreviatedPath": "\/img\/iPad\/02.png",
+		"outputAbbreviatedPath": "\/img\/iPad\/02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPad\/03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 228393,
+		"inputAbbreviatedPath": "\/img\/iPad\/03.png",
+		"outputAbbreviatedPath": "\/img\/iPad\/03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPad\/04.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 151815,
+		"inputAbbreviatedPath": "\/img\/iPad\/04.png",
+		"outputAbbreviatedPath": "\/img\/iPad\/04.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPad\/05.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 207443,
+		"inputAbbreviatedPath": "\/img\/iPad\/05.png",
+		"outputAbbreviatedPath": "\/img\/iPad\/05.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPad\/06.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180050,
+		"inputAbbreviatedPath": "\/img\/iPad\/06.png",
+		"outputAbbreviatedPath": "\/img\/iPad\/06.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPad\/07.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 147700,
+		"inputAbbreviatedPath": "\/img\/iPad\/07.png",
+		"outputAbbreviatedPath": "\/img\/iPad\/07.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/iPad\/08.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 196725,
+		"inputAbbreviatedPath": "\/img\/iPad\/08.png",
+		"outputAbbreviatedPath": "\/img\/iPad\/08.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/img\/iPhone\/01.png": {
 		"fileType": 32768,
 		"ignore": 0,

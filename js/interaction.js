@@ -6,7 +6,10 @@ var TRANSITION_TIME = 500;
 function goToFinalScreen() {
 	path = {
 		text: "This tutorial was brought to you by <a href=\"http://nickentin.com\">Nick Entin</a>.",
-		image: "01",
+		image: {
+			"iPhone": "01",
+			"iPad": "01"
+		},
 		buttons: {}
 	};
 	updateDisplay();
@@ -38,9 +41,9 @@ function updateDisplay() {
 	// fade text out for 300 ms, then fade back in (after changed) for 300 ms
 	$("#text").fadeOut(TRANSITION_TIME/2).fadeIn(TRANSITION_TIME/2);
 
-	$("#nextscreen").fadeOut(0).css("background-image","url(img/"+device+"/"+path.image+".png)").fadeIn(TRANSITION_TIME);
+	$("#nextscreen").fadeOut(0).css("background-image","url(img/"+device+"/"+path.image[device]+".png)").fadeIn(TRANSITION_TIME);
 	$("#screen").delay(TRANSITION_TIME).queue(function() {
-		$(this).css("background-image","url(img/"+device+"/"+path.image+".png)");
+		$(this).css("background-image","url(img/"+device+"/"+path.image[device]+".png)");
 		$(this).dequeue();
 	}).fadeIn(0);
 
@@ -64,7 +67,7 @@ function updateDisplay() {
 
 function preloadImagesForNextStep() {
 	for (var b in path.buttons) {
-		preloadImage("img/"+device+"/"+path.buttons[b].image+".png");
+		preloadImage("img/"+device+"/"+path.buttons[b].image[device]+".png");
 	}
 }
 
