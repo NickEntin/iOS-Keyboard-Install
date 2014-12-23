@@ -1,0 +1,29 @@
+$page_width: 92%;
+$text_height: 20%;
+$preview_height: 70%;
+
+html,body {
+	margin: 0px;
+	height: 100%;
+}
+
+#text {
+	position: absolute;
+	left: 50% - $page_width/2;
+
+	// position slightly above horizontal break at 25%
+	top: 25%;
+	margin-top: -1*$text_height - 5%;
+
+	width: $page_width;
+	height: $text_height;
+}
+
+#preview {
+	width: $page_width;
+	height: $preview_height;
+
+	position: absolute;
+	left: 50% - $page_width/2;
+	top: 25%;
+}
