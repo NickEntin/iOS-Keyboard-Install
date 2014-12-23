@@ -12,11 +12,14 @@ html,body {
 	left: 50% - $page_width/2;
 
 	// position slightly above horizontal break at 25%
-	top: 25%;
+	top: 20%;
 	margin-top: -1*$text_height - 5%;
 
 	width: $page_width;
 	height: $text_height;
+
+	// make font bigger for mobile devices
+	font-size: 2.0rem;
 }
 
 #preview {
