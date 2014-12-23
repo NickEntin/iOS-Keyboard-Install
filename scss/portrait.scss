@@ -19,7 +19,7 @@ html,body {
 	height: $text_height;
 
 	// make font bigger for mobile devices
-	font-size: 2.0rem;
+	font-size: 2.0rem !important;
 }
 
 #preview {
